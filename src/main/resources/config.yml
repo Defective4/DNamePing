@@ -1,0 +1,27 @@
+# Czy w³¹czyæ wyró¿nienie kolorem na czacie?
+enableColor: true
+
+# Podaj format wyró¿nienia
+pingFormat: "&a"
+
+# Domyœlny format wiadomoœci PO nicku wyró¿nionego gracza
+defaultContinueFormat: "&7"
+
+# Format wiadomoœci dla poszczególnych uprawnieñ
+# Musisz zast¹piæ znaki "." znakami "_"
+# Na przyk³ad zamiast "dnameping.prefix.admin" wpisz "dnameping_prefix_admin"
+# Mo¿esz tworzyæ swoje w³asne uprawnienia
+continuePerms:
+  dnameping_prefix_admin:
+    format: "&c"
+
+# W³¹czyæ powiadomienie dŸwiêkowe?
+enableSound: true
+
+# DŸwiêk powiadomienia
+# Mo¿liwe dŸwiêki znajdziesz pod https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+# w sekcji "Enum Constant Summary"
+pingSound: ENTITY_EXPERIENCE_ORB_PICKUP
+
+# Wysokoœæ dŸwiêku od 0.0 do 1.0 w³¹cznie
+pingPitch: 1.0

@@ -1,0 +1,14 @@
+name: DNamePing
+version: 1.0
+main: net.defekt.paper.nameping.Main
+author: Defective4
+api-version: 1.18
+commands:
+  npreload:
+    permission: dnameping.admin.reload
+    description: Przeladowuje konfiguracje
+
+permissions:
+  dnameping.admin.reload:
+    default: op
+    description: Uprawnienia do przeladowania konfiguracji
