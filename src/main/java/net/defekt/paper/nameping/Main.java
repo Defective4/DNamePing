@@ -83,7 +83,7 @@ public class Main extends JavaPlugin implements Listener {
             @Override
             public boolean onCommand(CommandSender arg0, Command arg1, String arg2, String[] arg3) {
                 load();
-                arg0.sendMessage(ChatColor.GREEN + "Konfiguracja prze³adowana!");
+                arg0.sendMessage(ChatColor.GREEN + "Configuration reloaded!");
                 return true;
             }
         });
@@ -115,26 +115,6 @@ public class Main extends JavaPlugin implements Listener {
             }
         }
         e.setMessage(message);
-
-//        try {
-//            for (Player recipient : e.getRecipients().toArray(new Player[0])) {
-//                String recName = recipient.getName();
-//                if (message.toLowerCase().contains(recName.toLowerCase())) {
-//                    if (enableColor) {
-//                        e.getRecipients().remove(recipient);
-//                        String newMsg = replace(message, recName,
-//                                ChatColor.translateAlternateColorCodes("&".charAt(0), pingFormat) + recName
-//                                        + lastColor);
-//                        recipient.sendMessage(String.format(e.getFormat(), displayName, newMsg));
-//                    }
-//                    if (enableSound) {
-//                        recipient.playSound(recipient.getLocation(), pingSound, 2, pingPitch);
-//                    }
-//                }
-//            }
-//        } catch (Exception ex) {
-//            ex.printStackTrace();
-//        }
     }
 
     public static String replace(String source, String target, String replacement) {
